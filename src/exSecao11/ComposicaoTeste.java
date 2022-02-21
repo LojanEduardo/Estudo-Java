@@ -11,7 +11,7 @@ import entities.HourContract;
 import entities.Worker;
 import entities.enums.WorkerLevel;
 
-public class ComposiçãoTeste {
+public class ComposiÃ§Ã£oTeste {
 
 	public static void main(String[] args) throws ParseException {
 		
@@ -31,18 +31,18 @@ public class ComposiçãoTeste {
 		
 		Worker worker = new Worker(workerName, WorkerLevel.valueOf(workerLevel), workerSalary, new Department(departamento));
 		
-		System.out.println("Quantos contratos este trabalhador irá ter? ");
+		System.out.println("Quantos contratos este trabalhador irï¿½ ter? ");
 		int n = sc.nextInt();
 		
 		for(int i = 1; i <= n; i++){
 			System.out.println("-------------------------");
-			System.out.println("Contrato de número " + i);
+			System.out.println("Contrato de nï¿½mero " + i);
 			System.out.println("-------------------------");
 			System.out.println("Entre com a data do contrato (DD/MM/YYYY)");
 			Date contractDate = sdf.parse(sc.next());
 			System.out.println("Valor por hora: ");
 			double valorHora = sc.nextDouble();
-			System.out.println("Duração(Hora): ");
+			System.out.println("Duraï¿½ï¿½o(Hora): ");
 			int hours = sc.nextInt();
 			HourContract contract = new HourContract(contractDate, valorHora, hours);
 			worker.addContract(contract);

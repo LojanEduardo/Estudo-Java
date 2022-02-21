@@ -11,8 +11,7 @@ public class Rectangle_ extends Shape{
 		super();
 	}
 	
-	public Rectangle_(Color color, double width, double height) {
-		super(color);
+	public Rectangle_(Double width, double height) {
 		this.width = width;
 		this.height = height;
 	}

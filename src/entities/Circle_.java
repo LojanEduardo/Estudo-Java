@@ -10,8 +10,7 @@ public class Circle_ extends Shape{
 		super();
 	}
 	
-	public Circle_(Color color, Double radius) {
-		super(color);
+	public Circle_(Double radius) {
 		this.radius = radius;
 	}
 	

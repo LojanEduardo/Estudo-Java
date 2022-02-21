@@ -32,11 +32,13 @@ public class MetodosAbstratos {
 				double width = sc.nextDouble();
 				System.out.println("Height: ");
 				double height = sc.nextDouble();
-				shapes.add(new Rectangle_(Color.valueOf(color), width, height));
+				//shapes.add(new Rectangle_(Color.valueOf(color), width, height));
+				shapes.add(new Rectangle_(width, height));
 			}else {
 				System.out.println("Radius: ");
 				double radius = sc.nextDouble();
-				shapes.add(new Circle_(Color.valueOf(color), radius));
+				//shapes.add(new Circle_(Color.valueOf(color), radius));
+				shapes.add(new Circle_(radius));
 			}	
 		}
 		
